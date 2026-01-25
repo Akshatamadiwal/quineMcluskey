@@ -25,3 +25,7 @@ def simplify_boolean(req: QMRequest):
         req.minterms,
         req.dontcares
     )
+
+@app.get("/")
+def root():
+    return {"status": "Backend running"}
